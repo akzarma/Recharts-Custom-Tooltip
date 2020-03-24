@@ -1,0 +1,124 @@
+.graph-tooltip {
+  min-width: 300px;
+  max-width: 300px;
+  border: 1px solid #c2d1d9;
+  background: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.graph-tooltip-mobile {
+  border: 1px solid #c2d1d9;
+  background: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.graph-tooltip-mobile h4 {
+  font-size: 10px !important;
+  line-height: 18px;
+  color: #333333 !important;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.graph-tooltip h4 {
+  font-size: 10px !important;
+  line-height: 18px;
+  color: #333333 !important;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.tooltip-tags {
+  margin-top: 5px;
+}
+
+.tooltip-category {
+  display: inline-block;
+  color: #8a8a8a;
+  font-size: 10px;
+}
+
+.tooltip-like {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  color: #333333;
+  font-size: 10px;
+}
+
+.tooltip-expect {
+  margin-top: 10px;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.tooltip-time {
+  display: inline-block;
+}
+
+.tooltip-time.float-right {
+  vertical-align: middle;
+  float: right;
+}
+
+.tooltip-time-label {
+  color: #8a8a8a;
+  font-weight: bold;
+}
+
+.tooltip-time-value {
+  color: #333333;
+  font-weight: bold;
+}
+
+@media (max-width: 350px) {
+  .graph-tooltip {
+    min-width: 200px;
+  }
+  .graph-tooltip-mobile {
+    min-width: 200px;
+  }
+}
+
+.custom-tooltip-container {
+  .scrollbar {
+    float: left;
+    height: 440px;
+    background: #fff;
+    scrollbar-color: #2e8cf9 #f5f5f5;
+    scrollbar-width: thin; // mozilla
+    overflow-y: scroll;
+    margin-bottom: 25px;
+  }
+  .graph-tooltip {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .force-overflow {
+    min-height: 200px;
+  }
+
+  /*
+ *  STYLE 1
+ */
+
+  #tooltip-custom-scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    background-color: #f5f5f5;
+  }
+
+  #tooltip-custom-scroll::-webkit-scrollbar {
+    width: 6px;
+    background-color: #f5f5f5;
+  }
+
+  #tooltip-custom-scroll::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.3);
+    background-color: #2e8cf9;
+  }
+}
